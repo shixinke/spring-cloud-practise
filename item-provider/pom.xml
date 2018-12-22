@@ -11,7 +11,7 @@
     <groupId>com.github.shixinke.spring.cloud</groupId>
     <artifactId>item-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>item-service</name>
+    <name>item-provider</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -42,7 +42,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>${spring.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -57,5 +57,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
