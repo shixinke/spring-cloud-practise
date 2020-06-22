@@ -1,5 +1,5 @@
 server:
-  port: 8003
+  port: 8101
 
 eureka:
   client:
@@ -10,4 +10,4 @@ eureka:
 
 spring:
   application:
-    name: item-consumer-1
+    name: stock-provider

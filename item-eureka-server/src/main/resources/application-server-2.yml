@@ -1,0 +1,16 @@
+server:
+  port: 2002
+
+
+eureka:
+  instance:
+    hostname: eureka-server-2
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka-server-1:2001/eureka/,http://eureka-server-1:2002/eureka/
+
+spring:
+  application:
+    name: item-discovery-server-1

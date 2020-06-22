@@ -1,13 +1,16 @@
 server:
-  port: 8003
+  port: 2001
+
 
 eureka:
+  instance:
+    hostname: eureka-server-1
   client:
+    register-with-eureka: false
+    fetch-registry: false
     service-url:
       defaultZone: http://eureka-server-1:2001/eureka/,http://eureka-server-2:2002/eureka/
-    register-with-eureka: true
-    fetch-registry: true
 
 spring:
   application:
-    name: item-consumer-1
+    name: item-discovery-server-1
